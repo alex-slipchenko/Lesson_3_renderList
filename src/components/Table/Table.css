@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    width: 400px;
+    margin-left: 100px;
+}
+
+table th,
+table td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 28px;
+}
+
+.table__active_half td, .table__active_half th{
+    border-width: 10px;
+}
+.table__active_all td, .table__active_all th{
+    border-width: 20px;
+}
+
+.active {
+    color: green;
+    font-weight: bold;
+}
