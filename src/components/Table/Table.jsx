@@ -42,6 +42,13 @@ class Table extends Component {
         }, 2000);
     }
 
+
+    componentWillUnmount() {
+        // Логика для очистки или остановки интервала, если это необходимо
+        clearInterval(this.removeSet);
+    }
+
+    
     render() {
         const { animals = [], isActiveHalf, isActiveAll, } = this.state;
 
